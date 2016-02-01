@@ -12,9 +12,18 @@ var resultado:Int = edad / lustro
 //Operacines basicas
 // + , - , * , /
 
+//Flotantes -> Float 32 bits de memoria
+//Calcular la longitud de una rueda de 90 cm de diametro.
+//Tip: L = d * Pi
 
-//Flotantes -> Float
-//Dobles -> Double
+var longitud:Double = 0
+var d:Double = 90
+let pi:Double = 3.1415
+
+//Resultado
+longitud = d * pi
+
+//Dobles -> Double 64 bits de memoria
 //Cadenas -> String
 //Arreglos -> Array
 //Boleanos -> Bool
