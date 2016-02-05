@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="holaAutoLayaout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy un ipad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfo-PC-sLE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola AutoLayouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7U-j4-Wkn">
+                                <rect key="frame" x="233" y="289" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="hEM-5l-9qI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hEM-5l-9qI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <mask key="constraints">
+                                        <include reference="hEM-5l-9qI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J7U-j4-Wkn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="356" id="3Xm-6V-ez3"/>
+                            <constraint firstItem="J7U-j4-Wkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3v1-3U-6Kz"/>
+                            <constraint firstItem="J7U-j4-Wkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Vb-Vc-KTW"/>
+                            <constraint firstItem="Mfo-PC-sLE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jUR-4S-LoH"/>
+                            <constraint firstItem="J7U-j4-Wkn" firstAttribute="baseline" secondItem="Mfo-PC-sLE" secondAttribute="firstBaseline" id="rOU-fv-n6t"/>
+                            <constraint firstItem="Mfo-PC-sLE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sBt-as-cvT"/>
+                            <constraint firstItem="J7U-j4-Wkn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uGc-Ng-Ipy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Mfo-PC-sLE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3Xm-6V-ez3"/>
+                                <exclude reference="9Vb-Vc-KTW"/>
+                                <exclude reference="rOU-fv-n6t"/>
+                                <exclude reference="jUR-4S-LoH"/>
+                                <exclude reference="sBt-as-cvT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Mfo-PC-sLE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3Xm-6V-ez3"/>
+                                <exclude reference="3v1-3U-6Kz"/>
+                                <include reference="9Vb-Vc-KTW"/>
+                                <include reference="rOU-fv-n6t"/>
+                                <exclude reference="uGc-Ng-Ipy"/>
+                                <include reference="jUR-4S-LoH"/>
+                                <include reference="sBt-as-cvT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.25" y="332.25"/>
+        </scene>
+    </scenes>
+</document>
